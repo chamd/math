@@ -1,0 +1,29 @@
+div:not(#content) {
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    position: absolute;
+}
+
+#content {
+    margin-top: 400px;
+}
+
+.btns {
+    width: 80px;
+    height: 50px;
+    border: 2px solid black;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btns:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.btns:active {
+    background-color: rgb(170, 170, 170);
+}

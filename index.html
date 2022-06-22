@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chansmos | 삼각함수 그려보기</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>2121 조찬아 수학발표 삼각함수 | Chansmos 찬스모스</h1>
+
+    Length 길이 <input type="range" min="1" max="2000" value="360" id="lengthBar" oninput="setGraph()" onchange="setGraph()">
+    <p id="lengthCount"></p><br>
+    Range 치역 <input type="range" min="1" max="200" value="100" id="rangeBar" oninput="setGraph()" onchange="setGraph()">
+    <p id="rangeCount"></p><br>
+    Cycle 주기 <input type="range" min="1" max="10" value="1" step="0.1" id="cycleBar" oninput="setGraph()" onchange="setGraph()">
+    <p id="cycleCount"></p>
+    <button class="btns" id="sinbtn" onclick="setFunction(0);">sin x</button>
+    <button class="btns" id="cosbtn" onclick="setFunction(1);">cos x</button>
+    <button class="btns" id="tanbtn" onclick="setFunction(2);">tan x</button>
+    <br>
+    <button class="btns" id="cscbtn" onclick="setFunction(3);">csc x</button>
+    <button class="btns" id="secbtn" onclick="setFunction(4);">sec x</button>
+    <button class="btns" id="cotbtn" onclick="setFunction(5);">cot x</button>
+
+    
+    <div id="content"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
