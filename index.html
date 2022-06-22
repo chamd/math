@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +8,46 @@
     <title>Chansmos | 삼각함수 그려보기</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-    <h1>2121 조찬아 수학발표 삼각함수 | Chansmos 찬스모스</h1>
+    <div class="title">chansmos</div>
 
-    Length 길이 <input type="range" min="1" max="2000" value="360" id="lengthBar" oninput="setGraph()" onchange="setGraph()">
-    <p id="lengthCount"></p><br>
-    Range 치역 <input type="range" min="1" max="200" value="100" id="rangeBar" oninput="setGraph()" onchange="setGraph()">
-    <p id="rangeCount"></p><br>
-    Cycle 주기 <input type="range" min="1" max="10" value="1" step="0.1" id="cycleBar" oninput="setGraph()" onchange="setGraph()">
-    <p id="cycleCount"></p>
-    <button class="btns" id="sinbtn" onclick="setFunction(0);">sin x</button>
-    <button class="btns" id="cosbtn" onclick="setFunction(1);">cos x</button>
-    <button class="btns" id="tanbtn" onclick="setFunction(2);">tan x</button>
-    <br>
-    <button class="btns" id="cscbtn" onclick="setFunction(3);">csc x</button>
-    <button class="btns" id="secbtn" onclick="setFunction(4);">sec x</button>
-    <button class="btns" id="cotbtn" onclick="setFunction(5);">cot x</button>
+    <div class="menus slides">
+        Length 길이 <input type="range" min="1" max="2000" value="360" id="lengthBar" oninput="setGraph()"
+            onchange="setGraph()">
+        <p id="lengthCount"></p><br>
+        Range 치역 <input type="range" min="1" max="200" value="100" id="rangeBar" oninput="setGraph()"
+            onchange="setGraph()">
+        <p id="rangeCount"></p><br>
+        Cycle 주기 <input type="range" min="1" max="10" value="1" step="0.1" id="cycleBar" oninput="setGraph()"
+            onchange="setGraph()">
+        <p id="cycleCount"></p>
+    </div>
 
-    
-    <div id="content"></div>
+    <div class="menus functions">
+        <button class="btns" id="sinbtn" onclick="setFunction(0);">sin x</button>
+        <button class="btns" id="cosbtn" onclick="setFunction(1);">cos x</button>
+        <button class="btns" id="tanbtn" onclick="setFunction(2);">tan x</button>
+        <br><br>
+        <button class="btns" id="cscbtn" onclick="setFunction(3);">csc x</button>
+        <button class="btns" id="secbtn" onclick="setFunction(4);">sec x</button>
+        <button class="btns" id="cotbtn" onclick="setFunction(5);">cot x</button>
+    </div>
+
+    <div class="menus colors">
+        <button class="pink" id="pinkbtn" onclick="setColor(0);"></button>
+        <button class="red" id="redbtn" onclick="setColor(1);"></button>
+        <button class="blue" id="bluebtn" onclick="setColor(2);"></button>
+        <button class="black" id="blackbtn" onclick="setColor(3);"></button>
+    </div>
+
+
+    <div id="content">
+        <div class="xaxis"></div>
+        <div class="yaxis"></div>
+    </div>
 
     <script src="main.js"></script>
 </body>
+
 </html>

@@ -1,18 +1,28 @@
-div:not(#content) {
+body {
+    margin: 0;
+    background-color: rgb(241, 241, 241);
+}
+
+:root {
+    --dotColor: red;
+}
+
+.dots {
     width: 5px;
     height: 5px;
-    background-color: red;
+    background-color: var(--dotColor);
     position: absolute;
 }
 
 #content {
     margin-top: 400px;
+    margin-left: 400px;
 }
 
 .btns {
     width: 80px;
     height: 50px;
-    border: 2px solid black;
+    border: 1px solid black;
     background-color: white;
     font-size: 20px;
     border-radius: 20px;
@@ -20,10 +30,78 @@ div:not(#content) {
     cursor: pointer;
 }
 
-.btns:hover {
+/* .btns:hover {
     background-color: rgb(230, 230, 230);
 }
 
 .btns:active {
     background-color: rgb(170, 170, 170);
+} */
+
+.title {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.menus {
+    margin: 20px;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.functions {
+    margin-top: 350px;
+}
+
+.colors {
+    margin-top: 530px;
+}
+
+.colors > button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}   
+
+.black {
+    background-color: black;
+}
+
+
+
+.xaxis {
+    width: 2050px;
+    height: 1px;
+    margin-left: -50px;
+    background-color: black;
+    position: absolute;
+}
+
+.yaxis {
+    width: 1px;
+    height: 500px;
+    margin-top: -250px;
+    background-color: black;
+    position: absolute;
 }
